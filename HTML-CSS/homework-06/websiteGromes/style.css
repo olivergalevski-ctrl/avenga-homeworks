@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* TOP BAR (social + contact info) */
+.top-bar {
+  background: #f5f5f5;
+  padding: 8px 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  border-top: 4px solid #ae1d22;
+  border-bottom: 1px solid #ca9c58;
+}
+
+.top-bar .social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.top-bar .social-icons a {
+  color: #555;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.top-bar .social-icons a:hover {
+  color: #ae1d22;
+}
+
+/* MAIN HEADER (logo + nav) */
+.main-header {
+  background: #fff;
+  padding: 14px 120px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #ca9c58;
+}
+
+.logo img {
+  width: 110px;
+  max-height: 80px;
+  margin-left: 120px;
+}
+
+nav {
+  margin-left: 35%;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #ae1d22;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 10px 0px 365px;
+  color: #3d3d3d;
+  font-size: 48px;
+  border-bottom: 1px solid #ca9c58;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.pochetnaSlika {
+  display: block;
+  margin: 40px auto;
+  max-width: 30%;
+}
+
+.pStart {
+  text-align: center;
+  margin: -30px 200px 10px 200px;
+  color: #555;
+  font-size: 24px;
+  font-style: bold;
+  line-height: 1.6;
+}
+
+section {
+  margin: 30px 150px;
+  color: #555;
+  font-size: 15px;
+}
+
+button {
+  margin: 30px auto;
+  background-color: #ae1d22;
+  border: none;
+  cursor: pointer;
+  display: block;
+  background: #d12e2e;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #a61f1f;
+}
+/* MAIN PAGE LAYOUT */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* Left side content */
+.main-content {
+  width: 70%;
+}
+
+/* Right side ASIDE */
+.promo-aside {
+  margin-top: 50px;
+  width: 28%;
+  background: #fff6f2;
+  border-left: 4px solid #d12e2e;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 20px; /* stays visible while scrolling */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ASIDE styling */
+.promo-aside h2 {
+  text-align: center;
+  color: #d12e2e;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.aside-item {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.promo-aside img {
+  width: 60%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.aside-item p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.aside-btn {
+  display: inline-block;
+  background: #d12e2e;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.aside-btn:hover {
+  background: #a61f1f;
+}
+
+
+.about-img {
+  display: block;
+  margin: 25px auto;
+  max-width: 40%;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}

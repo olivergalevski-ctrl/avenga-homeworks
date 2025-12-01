@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Контакт - RIMES</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mesnaindustrijagromes/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mesnaindustrijagromes/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="contact-info">
+            <i class="fa fa-phone"></i> +389 2 2545 115 &nbsp; | &nbsp;
+            <i class="fa fa-envelope"></i> email@site.com
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="/"><img src="../logo/logoGromes.jpg" alt="LOGO"></a>
+        </div>
+
+        <nav>
+            <a href="../index.html">Дома</a>
+            <a href="../about/about.html">За Нас</a>
+            <a href="../products/products.html">Производи</a>
+            <a href="../pricing/pricing.html">Ценовник</a>
+            <a href="../recipes/recipes.html">Рецепти</a>
+            <a href="../contact/contact.html" class="active">Контакт</a>
+        </nav>
+    </header>
+
+
+    <h1 style="margin-left: 60;">Контакт</h1>
+
+    <section class="contact-section">
+
+        <div class="contact-info-box">
+            <h2>Информации за контакт</h2>
+
+            <p><strong>Компанија:</strong> ГРОМЕС </p>
+            <p><strong>Адреса:</strong> Индустриска зона, Скопје, Македонија</p>
+            <p><strong>Е-пошта:</strong> info@gromes.com</p>
+            <p><strong>Телефон:</strong> +389 2 2545 115</p>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.2382148155484!2d21.433!3d41.997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDU5JzUwLjIiTiAyMcKwMjYnMDAuOSJF!5e0!3m2!1sen!2smk!4v0000000000"
+                width="100%"
+                height="280"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </section>
+
+
+    <!-- JOB APPLICATION FORM -->
+    <section class="application-section">
+        <h2>Апликација за работа</h2>
+
+        <form class="application-form">
+
+            <label>Име и Презиме</label>
+            <input type="text" name="fullname" placeholder="Вашето име и презиме" required>
+
+            <label>Е-пошта</label>
+            <input type="email" name="email" placeholder="you@example.com" required>
+
+            <label>Позиција</label>
+            <div class="radio-group">
+                <label><input type="radio" name="position" value="mesar" required> Месар</label>
+                <label><input type="radio" name="position" value="vozac" required> Возач</label>
+            </div>
+
+            <label>Качете CV</label>
+            <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit" class="submit-btn">Испрати апликација</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
