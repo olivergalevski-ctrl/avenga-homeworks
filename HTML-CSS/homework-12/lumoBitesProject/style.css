@@ -1,0 +1,299 @@
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f7f7fb;
+  color: #1f1f2b;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  color: #6c6c80;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background: #ff6b4a;
+  color: white;
+  border: none;
+}
+
+.primary:hover {
+  background: #e85a3c;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #ff6b4a;
+  color: #ff6b4a;
+}
+
+.outline:hover {
+  background: #ff6b4a;
+  color: white;
+}
+
+/* ---------- HEADER (Flex) ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f1f2b;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1f1f2b;
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+/* ---------- HERO (Flex) ---------- */
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 16px 0;
+}
+
+.label {
+  color: #ff6b4a;
+  font-weight: 500;
+}
+
+.hero-buttons {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.hero-image {
+  flex: 1;
+  height: 300px;
+  background: #ffe1d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+/* ---------- BENEFITS (Grid) ---------- */
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.benefit-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+/* ---------- PRODUCTS (Grid) ---------- */
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: -50px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.badge {
+  display: inline-block;
+  background: #ffe1d8;
+  color: #ff6b4a;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+}
+
+/* ---------- TESTIMONIAL ---------- */
+.testimonial {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-box {
+  max-width: 600px;
+  text-align: center;
+  padding: 40px;
+  border-left: 6px solid #ff6b4a;
+  animation: fadeIn 2s ease;
+}
+
+blockquote {
+  margin: 24px 0;
+  font-style: italic;
+}
+
+.author {
+  font-weight: 500;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: #1b1b25;
+  color: #f3f3ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.footer a {
+  color: #f3f3ff;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- TABLET ------- */
+
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefit-card {
+    text-align: center;
+  }
+
+  .benefit-card:nth-child(3) {
+    grid-column: 1 / -1;   /* span both columns */
+    margin: 0 auto;       /* centers it */
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  .product-card {
+    text-align: center;
+  }
+  
+}
+/* ---------- MOBILE ------- */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .hero-image {
+    order: -1  ;
+  }
+
+  .benefits-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card  {
+        text-align: center;
+    }
+
+    .product-card {
+        text-align: center;
+    }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
