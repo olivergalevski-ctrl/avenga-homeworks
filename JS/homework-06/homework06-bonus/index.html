@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Create a Recipe</h1>
+
+    <label>
+      Recipe name:
+      <input type="text" id="recipeName" />
+    </label>
+    <br /><br />
+
+    <label>
+      Number of ingredients:
+      <input type="number" id="ingredientCount" min="1" />
+    </label>
+    <br /><br />
+
+    <button onclick="createIngredientInputs()">Next</button>
+
+    <div id="ingredientsSection" class="hidden">
+      <h3>Ingredients</h3>
+      <div id="ingredientInputs"></div>
+      <button onclick="createRecipe()">Create Recipe</button>
+    </div>
+
+    <div id="recipeResult"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

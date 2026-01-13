@@ -113,47 +113,73 @@ function withdrawFunds(username) {
 }
 
 function transferMoney(username) {
-    let recipient = prompt("Enter the recipient's username:");
-    if (!bankData[recipient]) {
-        alert("Recipient does not exist.");
-        transferMoney(username);
-        return;
-    }
+  let recipient = prompt("Enter the recipient's username:");
+  if (recipient === null) {
+    dashboard(username);
+    return;
+  }
 
-    if (recipient === username) {
-        alert("You cannot transfer money to yourself.");
-        transferMoney(username);
-        return;
-    }
+  if (!bankData[recipient]) {
+    alert("Recipient does not exist.");
+    transferMoney(username);
+    return;
+  }
 
-    const amount = parseFloat(prompt("Enter the amount to transfer:"));
+  if (recipient === username) {
+    alert("You cannot transfer money to yourself.");
+    transferMoney(username);
+    return;
+  }
 
-    if (isNaN(amount) || amount <= 0) {
-        alert("Please enter a valid amount greater than 0.");
-        transferMoney(username); 
-        return;
-    }
+  const amount = parseFloat(prompt("Enter the amount to transfer:"));
+  if (isNaN(amount) || amount <= 0) {
+    alert("Please enter a valid amount greater than 0.");
+    transferMoney(username);
+    return;
+  }
 
-    if (amount > bankData[username].balance) {
-        alert("Insufficient funds.");
-        transferMoney(username); 
-        return;
-    }
+  const sectorTax =
+    sectors[bankData[username].sector].tax +
+    sectors[bankData[recipient].sector].delayTax;
 
-    const confirmTransfer = confirm("Are you sure you want to transfer $" + amount + " to " + recipient + "?");
-    if (confirmTransfer) {
-        bankData[username].balance -= amount;
-        bankData[recipient].balance += amount;
+  const taxedAmount = amount - amount * sectorTax;
 
-        const date = new Date().toLocaleString();
-        bankData[username].history.push("Sent $" + amount + " to " + recipient + " at " + date);
-        bankData[recipient].history.push("Received $" + amount + " from " + username + " at " + date);
+  if (taxedAmount > bankData[username].balance) {
+    alert("Insufficient funds.");
+    transferMoney(username);
+    return;
+  }
 
-        alert("Transferred $" + amount + " to " + recipient);
-    }
+  const convertedAmount = convertCurrency(
+    taxedAmount,
+    bankData[username].currency,
+    bankData[recipient].currency
+  );
 
-    dashboard(username); 
+  const confirmTransfer = confirm(
+    `Transfer ${taxedAmount} to ${recipient}?`
+  );
+
+  if (!confirmTransfer) {
+    dashboard(username);
+    return;
+  }
+
+  bankData[username].balance -= taxedAmount;
+  bankData[recipient].balance += convertedAmount;
+
+  const date = new Date().toLocaleString();
+  bankData[username].history.push(
+    `Sent ${taxedAmount} to ${recipient} at ${date}`
+  );
+  bankData[recipient].history.push(
+    `Received ${convertedAmount} from ${username} at ${date}`
+  );
+
+  alert("Transfer successful.");
+  dashboard(username);
 }
+
 
 function viewTransactionHistory(username) {
     const history = bankData[username].history;
