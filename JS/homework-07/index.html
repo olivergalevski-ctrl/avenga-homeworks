@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Create Dynamic Table</h1>
+    <label>
+      Rows:
+      <input type="number" id="rows" min="1" />
+    </label>
+    &nbsp;
+    <label>
+      Columns:
+      <input type="number" id="columns" min="1" />
+    </label>
+    &nbsp;
+    <button onclick="createTable()">Create Table</button>
+    &nbsp;
+    <button onclick="clearAll()">Clear All</button>
+
+    <br />
+    <br />
+    <p id="error"></p>
+    <div id="tableContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
