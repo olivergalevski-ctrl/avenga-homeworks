@@ -1,0 +1,25 @@
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-size: 1.5rem;
+        }
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700px;
+}
+
+.page-wrapper {
+  max-width: 1600px;   
+  margin: 0 auto;  
+  padding: 16px 24px;    
+}
