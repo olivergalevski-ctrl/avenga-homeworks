@@ -1,45 +1,28 @@
 import { fetchData } from "./api.js";
+import { createToggleButton, updateToggleButton, renderTableRows } from "./helpers.js";
 
 const tableBody = document.querySelector("#planetsTable tbody");
 const loadPlanetsBtn = document.getElementById("loadPlanetsBtn");
 
-const toggleBtn = document.createElement("button");
-toggleBtn.style.display = "none";
-loadPlanetsBtn.insertAdjacentElement("afterend", toggleBtn);
+const toggleBtn = createToggleButton(loadPlanetsBtn);
 
 function renderPlanets(page = 1) {
-    const apiUrl = page === 1
-        ? "https://swapi.dev/api/planets/?page=1"
-        : "https://swapi.dev/api/planets/?page=2";
+    const apiUrl = `https://swapi.dev/api/planets/?page=${page}`;
 
     fetchData(apiUrl)
         .then(data => {
             const planets = data.results;
+
             tableBody.innerHTML = "";
 
-             for (const planet of planets) {
-                const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td>${planet.name}</td>
-                    <td>${planet.population}</td>
-                    <td>${planet.climate}</td>
-                    <td>${planet.gravity}</td>
-                `;
-                tableBody.appendChild(row);
-            };
+            renderTableRows(planets, tableBody);
 
             toggleBtn.style.display = "inline-block";
 
-            if (page === 1) {
-                toggleBtn.textContent = "NEXT 10";
-                toggleBtn.onclick = () => renderPlanets(2);
-            } else {
-                toggleBtn.textContent = "PREVIOUS 10";
-                toggleBtn.onclick = () => renderPlanets(1);
-            }
+            updateToggleButton(toggleBtn, page, renderPlanets);
 
             loadPlanetsBtn.style.display = "none";
-        })
+        });
 }
 
 loadPlanetsBtn.addEventListener("click", () => renderPlanets(1));
