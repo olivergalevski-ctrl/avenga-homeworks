@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Homework01/Task01.csproj" />
+  <Project Path="Task01-MethodVersion/Task01-MethodVersion.csproj" Id="722321ff-580c-4d3a-8c65-2877181716dd" />
+  <Project Path="Task02-ClassVersion/Task02-ClassVersion.csproj" Id="e91e52f8-30a6-4161-89a5-624340fe86f2" />
+  <Project Path="Task02-MethodVersion/Task02-MethodVersion.csproj" Id="03de4bc8-2199-4ab9-8bc9-fe38cab2b180" />
+  <Project Path="Task03-ClassVersion/Task03-ClassVersion.csproj" Id="ba2add44-751b-44bb-b2cc-e0fa01bfb1b1" />
+  <Project Path="Task03-MethodVersion/Task03-MethodVersion.csproj" Id="81cb9b52-738e-42a8-8071-309f53c22adc" />
+</Solution>

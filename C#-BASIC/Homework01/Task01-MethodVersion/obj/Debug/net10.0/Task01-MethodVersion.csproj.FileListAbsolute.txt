@@ -1,0 +1,15 @@
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\bin\Debug\net10.0\Task01-MethodVersion.exe
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\bin\Debug\net10.0\Task01-MethodVersion.deps.json
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\bin\Debug\net10.0\Task01-MethodVersion.runtimeconfig.json
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\bin\Debug\net10.0\Task01-MethodVersion.dll
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\bin\Debug\net10.0\Task01-MethodVersion.pdb
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.AssemblyInfoInputs.cache
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.AssemblyInfo.cs
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.csproj.CoreCompileInputs.cache
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.sourcelink.json
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.dll
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\refint\Task01-MethodVersion.dll
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.pdb
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\Task01-MethodVersion.genruntimeconfig.cache
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework01\Task01-MethodVersion\obj\Debug\net10.0\ref\Task01-MethodVersion.dll
