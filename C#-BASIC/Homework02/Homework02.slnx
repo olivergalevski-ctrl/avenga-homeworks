@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Task01/Task01.csproj" />
+  <Project Path="Task02-MethodVersion/Task02-MethodVersion.csproj" Id="6e3cab42-b8e5-4cab-9690-b62349a4f6ab" />
+  <Project Path="Task02/Task02.csproj" />
+</Solution>
