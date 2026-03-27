@@ -23,9 +23,11 @@ while (true)
 }
 static int AgeCalculator(DateTime birthDate)
 {
-    int age = DateTime.Now.Year - birthDate.Year;
+    DateTime today = DateTime.Today;
 
-    if (DateTime.Now < birthDate.AddYears(age))
+    int age = today.Year - birthDate.Year;
+
+    if (birthDate.Date > today.AddYears(-age))
     {
         age--;
     }

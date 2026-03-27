@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="AgeCalculator/AgeCalculator.csproj" />
+  <Project Path="AgeCalculatorV1.1/AgeCalculatorV1.1.csproj" Id="3f1e524f-96f3-4caa-b63c-9a86ccf3fa8f" />
 </Solution>

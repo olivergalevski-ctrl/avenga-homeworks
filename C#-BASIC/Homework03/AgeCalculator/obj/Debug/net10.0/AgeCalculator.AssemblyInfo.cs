@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgeCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+005bbd13835cee0444e1d9fb83a5aa9de8d176fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a261bb7893e7e96b0f41ce42718ee14f92057d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgeCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgeCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
