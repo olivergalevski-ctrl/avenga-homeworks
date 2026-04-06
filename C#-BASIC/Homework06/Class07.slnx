@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Constructors/Constructors.csproj" />
+  <Project Path="Domain/Domain.csproj" />
+  <Project Path="Enums/Enums.csproj" />
+  <Project Path="Homework/Homework.csproj" Id="201eb5ed-9c20-4245-a716-3645e3ce0e52" />
+  <Project Path="Inheritance/Inheritance.csproj" />
+</Solution>

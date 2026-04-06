@@ -1,0 +1,12 @@
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Oliver\Desktop\Avenga Academy\avenga-homeworks\avenga-homeworks\C#-BASIC\Homework06\Domain\obj\Debug\net8.0\ref\Domain.dll
